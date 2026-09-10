@@ -1,0 +1,23 @@
+application:
+  subdomain: miair-next
+  background_task: true
+  multi_instance: false
+  upstreams:
+    - location: /
+      backend: http://host.lzcapp:8300/
+services:
+  miair-next:
+    # upstream: docker.io/mrdeer1997/miair-next:0.6.0
+    image: docker.1ms.run/mrdeer1997/miair-next:0.6.0
+    network_mode: host
+    environment:
+      - MIAIR_WEB_PORT=8300
+      - MIAIR_GITHUB_REPO=deerwan/miair-next
+      - MIAIR_TOKEN_EXPIRE_HOURS=24
+    binds:
+      - /lzcapp/var/data:/app/data
+usage: |
+  首次打开请创建管理员账号，然后在「账号配置」中登录小米账号并选择音箱。
+  微服、音箱和投送设备必须位于可互通组播的同一局域网。
+  应用使用宿主网络，需保证 8300 端口未被其他服务占用。
+  请勿将管理端口直接转发到公网。关闭管理页面后投送服务仍在后台运行。

@@ -1,0 +1,15 @@
+package: community.lazycat.app.miair-next
+version: 0.6.0
+name: MiAir Next
+description: 让小米小爱音箱化身DLNA渲染器和AirPlay接收器，并附带一个现代化的Web管理后台
+homepage: https://github.com/deerwan/miair-next
+author: deerwan
+license: GPL-3.0-or-later
+min_os_version: 1.5.0
+locales:
+  zh:
+    name: MiAir Next
+    description: 让小米小爱音箱化身DLNA渲染器和AirPlay接收器，并附带一个现代化的Web管理后台
+  en:
+    name: MiAir Next
+    description: Turn Xiaomi XiaoAI speakers into DLNA renderers and AirPlay receivers with a web management interface.
