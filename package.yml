@@ -4,7 +4,7 @@ name: MiAir Next
 description: 让小米小爱音箱化身DLNA渲染器和AirPlay接收器，并附带一个现代化的Web管理后台
 homepage: https://github.com/deerwan/miair-next
 author: deerwan
-license: GPL-3.0-or-later
+license: GPL-3.0
 min_os_version: 1.5.0
 locales:
   zh:
